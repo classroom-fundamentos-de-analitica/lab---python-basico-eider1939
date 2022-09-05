@@ -12,7 +12,7 @@ Utilice el archivo `data.csv` para resolver las preguntas.
 
 """
 
-
+import csv
 def pregunta_01():
     """
     Retorne la suma de la segunda columna.
