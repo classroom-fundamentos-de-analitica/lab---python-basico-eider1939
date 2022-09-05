@@ -21,7 +21,14 @@ def pregunta_01():
     214
 
     """
-    return
+    valor_columna2=0
+    with open('data.csv') as File:
+        reader = csv.reader(File, delimiter=',', quotechar='\t',
+                            quoting=csv.QUOTE_MINIMAL)
+        for row in reader:
+            lista_pcolunas=row[0].split('\t')
+            valor_columna2+=int(lista_pcolunas[1])
+    return valor_columna2
 
 
 def pregunta_02():
